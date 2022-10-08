@@ -1,16 +1,21 @@
+:root {
+  --primary-text-color: #212121;
+  --title-tex-color: #757575;
+  --accent-color: #2196f3;
+}
 body {
-  color: #212121;
+  color: var(--primary-text-color);
   background-color: #f5f5f5;
 }
 
 .logo-title {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .logo:hover,
 .logo-title:hover,
 .logo:focus,
 .logo-title:focus {
-  color: #eee01d;
+  color: var(--accent-color);
 }
 
 .list {
@@ -19,17 +24,31 @@ body {
 
 /* site-nav */
 .blue {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .site-nav .link {
-  color: #212121;
+  color: var(--primary-text-color);
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: #eee01d;
+  color: var(--accent-color);
 }
-/* основний колір тексту, колір підпису посади 757575 */
-/* додатковий колір тексту (заголовки, колір імен і тд) 212121 */
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+/* hero */
+.hero-title {
+  color: var(--primary-text-color);
+}
+
+/* secton */
+
+.section-title {
+  color: var(--primary-text-color);
+}
+/* основний колір тексту, колір підпису посади #212121 */
+/* додатковий колір тексту (заголовки, колір імен і тд) #757575 */
 /* колір логотипу, посилань 2196F3 */
 /* додатк фон букв футера #FFFFFF 60% */
 /*  колір адреси, напис на банері #FFFFFF */
